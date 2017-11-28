@@ -4,7 +4,7 @@
   "description": "A higher order component decorator for rendering an image with loading animation using react",
   "main": "./lib/index.js",
   "scripts": {
-    "scss": "node-sass --output-style expanded --recursive scss/default.scss dist/react-loading.css",
+    "scss": "node-sass --output-style expanded --recursive scss/default.scss dist/react-image.css",
     "build": "babel src --presets=es2015,react --out-dir lib",
     "clean": "rm -rf lib && rm -rf dist",
     "prepublish": "npm run clean && npm run build && npm run scss"
