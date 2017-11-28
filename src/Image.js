@@ -26,8 +26,8 @@ class Image extends Component {
         const { loading } = this.state;
         const { className, src, width, height, alt, title, onClick } = this.props;
 
-        const classNames = ['kwfUp-kitchenImage'];
-        if (loading) classNames.push('kwfUp-kitchenImage--loading');
+        const classNames = ['kwfUp-reactImage'];
+        if (loading) classNames.push('kwfUp-reactImage--loading');
         if (className) classNames.push(className);
 
         return (
