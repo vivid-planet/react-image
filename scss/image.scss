@@ -11,10 +11,13 @@
     position: relative;
     height: 0;
 
+    img {
+        width: 100%;
+        height: auto;
+    }
+
     &--loading {
         img {
-            width: 100%;
-            height: auto;
             opacity: 0.8;
         }
 
