@@ -12,7 +12,7 @@ You can then import `react-image` and its styles in your application as follows:
 
 ```javascript
 import Image from '@vivid-planet/react-image';
-import '@vivid-planet/react-image/dist/react-loading.css';
+import '@vivid-planet/react-image/dist/react-image.css';
 ```
 
 ## Usage
