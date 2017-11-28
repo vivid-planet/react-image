@@ -1,3 +1,37 @@
+@keyframes loading-rotate {
+    0%    { transform: rotate(0deg); }
+    100%  { transform: rotate(360deg); }
+}
+@keyframes loading-fadeInLoading {
+    0%    { opacity: 0; }
+    100%  { opacity: 0.6; }
+}
+
 .kwfUp-reactImage {
     position: relative;
+
+    &--loading {
+        position: relative;
+
+        img {
+            opacity: 0.8;
+        }
+
+        &:after {
+            animation: loading-rotate 0.8s infinite linear, loading-fadeInLoading 2s linear;
+            border: 2px solid #333333;
+            border-right-color: transparent;
+            margin: -13px auto 0 auto;
+            border-radius: 50%;
+            position: absolute;
+            height: 26px;
+            opacity: 0.6;
+            z-index: 50;
+            content: "";
+            width: 26px;
+            top: 50%;
+            right: 0;
+            left: 0;
+        }
+    }
 }
