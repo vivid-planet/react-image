@@ -9,9 +9,12 @@
 
 .kwfUp-reactImage {
     position: relative;
+    height: 0;
 
     &--loading {
         img {
+            width: 100%;
+            height: auto;
             opacity: 0.8;
         }
 

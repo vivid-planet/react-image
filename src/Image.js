@@ -31,7 +31,12 @@ class Image extends Component {
         if (className) classNames.push(className);
 
         return (
-            <div className={classNames.join(' ')}>
+            <div
+                className={classNames.join(' ')}
+                style={{
+                    paddingBottom: `${100 * (height / width)}%`
+                }}
+            >
                 <img
                     {...{src, width, height, alt, title, onClick}}
                     onLoad={this._handleImageLoaded}
