@@ -1,6 +1,6 @@
 {
   "name": "@vivid-planet/react-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A higher order component decorator for rendering an image with loading animation using react",
   "main": "./lib/index.js",
   "scripts": {
