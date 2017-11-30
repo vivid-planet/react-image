@@ -1,8 +1,8 @@
-@keyframes loading-rotate {
+@keyframes kwfUp-reactImage-rotate {
     0%    { transform: rotate(0deg); }
     100%  { transform: rotate(360deg); }
 }
-@keyframes loading-fadeInLoading {
+@keyframes kwfUp-reactImage-fadeIn {
     0%    { opacity: 0; }
     100%  { opacity: 0.6; }
 }
@@ -23,7 +23,7 @@
         }
 
         &:after {
-            animation: loading-rotate 0.8s infinite linear, loading-fadeInLoading 2s linear;
+            animation: kwfUp-reactImage-rotate 0.8s infinite linear, kwfUp-reactImage-fadeIn 2s linear;
             border: 2px solid #333333;
             border-right-color: transparent;
             margin: -13px auto 0 auto;
