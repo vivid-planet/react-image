@@ -24,6 +24,7 @@
 
         &:after {
             animation: kwfUp-reactImage-rotate 0.8s infinite linear, kwfUp-reactImage-fadeIn 2s linear;
+            box-sizing: border-box;
             border: 2px solid #333333;
             border-right-color: transparent;
             margin: -13px auto 0 auto;
