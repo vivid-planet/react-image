@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export interface IProps {
+export interface ImageProps {
     src: string;
     width: number;
     height: number;
@@ -10,6 +10,6 @@ export interface IProps {
     onClick?: () => void;
 }
 
-class Image extends React.Component<IProps> {}
+declare class Image extends React.Component<ImageProps> {}
 
 export default Image;
