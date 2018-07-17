@@ -8,6 +8,7 @@ export interface ImageProps {
     alt?: string;
     title?: string;
     onClick?: () => void;
+    onLoaded?: () => void;
 }
 
 declare class Image extends React.Component<ImageProps> {}

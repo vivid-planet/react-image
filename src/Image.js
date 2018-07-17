@@ -20,6 +20,9 @@ class Image extends Component {
 
     _handleImageLoaded() {
         this.setState({ loading: false });
+
+        const { onLoaded } = this.props;
+        if (onLoaded) onLoaded();
     }
 
     render() {
@@ -53,7 +56,8 @@ Image.propTypes = {
     className: PropTypes.string,
     alt: PropTypes.string,
     title: PropTypes.string,
-    onClick: PropTypes.func
+    onClick: PropTypes.func,
+    onLoaded: PropTypes.func
 };
 
 export default Image;
