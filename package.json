@@ -6,7 +6,7 @@
   "typings": "./index.d.ts",
   "scripts": {
     "scss": "node-sass --output-style expanded --recursive scss/default.scss dist/react-image.css",
-    "build": "babel src --presets=es2015,react --out-dir lib",
+    "build": "babel src --presets=es2015,react --plugins transform-object-rest-spread --out-dir lib",
     "clean": "rm -rf lib && rm -rf dist",
     "prepublish": "npm run clean && npm run build && npm run scss"
   },
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "node-sass": "^4.9.2"
