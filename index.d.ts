@@ -2,6 +2,7 @@ import * as React from "react";
 
 export interface ImageProps {
     src: string;
+    srcSet?: string;
     width: number;
     height: number;
     className?: string;
