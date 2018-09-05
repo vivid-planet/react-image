@@ -27,7 +27,7 @@ class Image extends Component {
 
     render() {
         const { loading } = this.state;
-        const { className, src, width, height, alt, title, onClick } = this.props;
+        const { className, ...imgProps } = this.props;
 
         const classNames = ['kwfUp-reactImage'];
         if (loading) classNames.push('kwfUp-reactImage--loading');
@@ -37,11 +37,11 @@ class Image extends Component {
             <div
                 className={classNames.join(' ')}
                 style={{
-                    paddingBottom: `${100 * (height / width)}%`
+                    paddingBottom: `${100 * (imgProps.height / imgProps.width)}%`
                 }}
             >
                 <img
-                    {...{src, width, height, alt, title, onClick}}
+                    {...imgProps}
                     onLoad={this._handleImageLoaded}
                 />
             </div>
@@ -51,6 +51,7 @@ class Image extends Component {
 
 Image.propTypes = {
     src: PropTypes.string.isRequired,
+    srcSet: PropTypes.string,
     width: PropTypes.number.isRequired,
     height: PropTypes.number.isRequired,
     className: PropTypes.string,
